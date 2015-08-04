@@ -64,17 +64,12 @@ brew install caskroom/cask/brew-cask
 # Install Casks
 apps=(
     google-chrome
-    alfred
     transmission
     spectacle
-    textexpander
-    backblaze
     charles
     dash
     dropbox
     laullon-gitx
-    handbrake
-    kaleidoscope
     pd-extended
     reveal
     paintcode
