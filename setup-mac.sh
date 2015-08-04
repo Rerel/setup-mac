@@ -64,31 +64,31 @@ brew install caskroom/cask/brew-cask
 # Install Casks
 apps=(
     google-chrome
+    dashlane
+    atom
+    sublime-text
+    spotify
+    slack
+    the-unarchiver    
+    ios-console
+    sourcetree
+    github
+    imageoptim
+    whatsize
+    duet
     transmission
-    spectacle
-    charles
-    dash
     dropbox
     laullon-gitx
     pd-extended
     reveal
     paintcode
-    spotify
-    atom
-    sublime-text
+    spectacle
+    dash
     vlc
-    whatsize
-    duet
-    dashlane
-    slack
     evernote
-    imageoptim
-    ios-console
-    sourcetree
-    the-unarchiver
     limechat
     xquartz
-    github
+    charles
 )
 
 # Install apps to /Applications
