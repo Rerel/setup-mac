@@ -19,7 +19,6 @@ brew install coreutils
 brew install findutils
 
 # install common brew tools
-
 binaries=(
     zsh
     emacs
@@ -37,11 +36,15 @@ binaries=(
     xctool
 )
 
-echo “installing binaries…”
+printf "\e[34m=> Installing: \033[0m Common brew binaries...\n"
 brew install ${binaries[@]}
 
 # clean up
 brew cleanup
+
+# Oh my Zsh install
+printf "\e[34m=> Installing: \033[0m Oh my Zsh...\n"
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # Install DotFiles
 printf "\e[34m=> Installing: \033[0m DotFiles (emacs, git, zsh)...\n"
@@ -54,10 +57,6 @@ cp .gitignore_global ~/.
 cp .z* ~/.
 cd ..
 rm -rf DotFiles
-
-# Oh my Zsh install
-printf "\e[34m=> Installing: \033[0m Oh my Zsh...\n"
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # Install Cask
 brew install caskroom/cask/brew-cask
