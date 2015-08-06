@@ -69,6 +69,7 @@ apps=(
     sublime-text
     spotify
     slack
+    skype    
     the-unarchiver    
     ios-console
     sourcetree
