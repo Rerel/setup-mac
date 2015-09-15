@@ -68,6 +68,7 @@ apps=(
     atom
     sublime-text
     spotify
+    beardedspice
     slack
     skype    
     the-unarchiver    
