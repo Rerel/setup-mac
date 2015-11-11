@@ -12,7 +12,7 @@ fi
 # Update homebrew recipes
 brew update
 
-# Install GNU core utilities (those that come with OS X are outdated)
+# Install GNU core utilities
 brew install coreutils
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
@@ -66,14 +66,12 @@ apps=(
     google-chrome
     dashlane
     atom
-    sublime-text
     spotify
     beardedspice
     slack
     skype    
     the-unarchiver    
     ios-console
-    sourcetree
     github
     imageoptim
     whatsize
@@ -83,11 +81,7 @@ apps=(
     laullon-gitx
     pd-extended
     reveal
-    paintcode
-    spectacle
-    dash
     vlc
-    evernote
     limechat
     xquartz
     charles
@@ -100,10 +94,11 @@ brew cask install --appdir="/Applications" ${apps[@]}
 
 brew tap caskroom/versions
 
-# Cocoapods install
-printf "\e[34m=> Installing: \033[0m Cocoapods...\n"
-sudo gem install cocoapods
+# Install Gems
+gems=(
+  cocoapods
+  shenzhen
+)
 
-# Shenzhen install
-printf "\e[34m=> Installing: \033[0m Shenzhen for Building & Distributing iOS Apps...\n"
-sudo gem install shenzhen
+printf "\e[34m=> Installing: \033[0m Installing common gems...\n"
+sudo gem install ${gems[@]}
