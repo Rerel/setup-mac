@@ -103,3 +103,7 @@ brew tap caskroom/versions
 # Cocoapods install
 printf "\e[34m=> Installing: \033[0m Cocoapods...\n"
 sudo gem install cocoapods
+
+# Shenzhen install
+printf "\e[34m=> Installing: \033[0m Shenzhen for Building & Distributing iOS Apps...\n"
+sudo gem install shenzhen
